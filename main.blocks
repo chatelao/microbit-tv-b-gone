@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Oc0z{%B$#S~,R(j2GVh2">r</variable><variable id="NdgC{vp**[AfoB(jR065">FACTOR</variable><variable id="Q{sHE`@z+zG9v)qvOdpb">LEADER_PULSE</variable><variable id="#3*U%xaAxLvsv-%c5AE8">PULSE_BIT</variable><variable id="~Z/{UBZ(GCHbsX(~=^uZ">code</variable><variable id="6#=Mx3VuRDI1_AfnFG6:">PULSE_ONE</variable><variable id="UT=zW`d[F16syM`NFGA3">PULSE_ZERO</variable></variables><comment id="J_b`;nrACq`WcxElKFIy" x="1824" y="1068" w="480" h="360">
+This is a demo on how to send SAMSUNG ir codes.
+The code expects an IR led to be connected to Pin 0
+
+A SAMSUNG IR code has the following form
+
+START SIGNAL
+32 bits i.e. 32 time ONE or ZERO signal
+END SIGNAL
+
+Each of these 4 signals is encoded by a certain time of a 38 khz
+pulsed signal (on) followed by a certain time off.
+
+START SIGNAL: 4500 μs on, 4500 μs off
+ONE SIGNAL: 560 μs on, 1600 μs off
+ZERO SIGNAL: 560 μs on, 530 μs off
+END SIGNAL: 560 μs on, 4500 μs off
+</comment></xml>
